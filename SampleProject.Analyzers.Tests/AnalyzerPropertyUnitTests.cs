@@ -28,7 +28,7 @@ namespace SampleProject.Analyzers.Tests
         }
     }";
 
-            var expected = VerifyCS.Diagnostic("Demo1001").WithSpan(12, 28, 12, 31);
+            var expected = VerifyCS.Diagnostic("Demo1001").WithSpan(12, 13, 12, 16);
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
         }
 
