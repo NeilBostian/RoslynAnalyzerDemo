@@ -6,7 +6,11 @@ namespace SampleProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ChildClass childClass = new ChildClass();
+            BaseClass baseClass = childClass;
+
+            childClass.Test();
+            baseClass.Test();
         }
     }
 }
